@@ -458,7 +458,7 @@ const updateUrlSearchParams = () => {
     <label
       class="swap absolute top-5 right-17 btn m-1 bg-neutral/65 hover:bg-neutral border-transparent transition-colors duration-400 rounded-xl pl-2! pr-2!"
     >
-      <input :checked="muteSounds" type="checkbox" @click="toggleMute()" />
+      <input :checked="!muteSounds" type="checkbox" @click="toggleMute()" />
 
       <!-- volume on icon -->
       <svg
