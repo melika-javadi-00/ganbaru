@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: "synthwave", "nord", "valentine", "sth";
+}
+
+@plugin "daisyui/theme" {
+  name: "ganbaru-forest";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: #f2ddc9;
+  --color-base-200: #8f857d;
+  --color-base-300: #e9f0e1;
+  --color-base-content: #5c5552;
+  --color-primary: #8f857d;
+  --color-primary-content: oklch(25% 0.092 26.042);
+  --color-secondary: #5c5552;
+  --color-secondary-content: #f2ddc9;
+  --color-accent: #cc4762;
+  --color-accent-content: #e9f0e1;
+  --color-neutral: #e9f0e1;
+  --color-neutral-content: #5c5552;
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(26% 0.051 172.552);
+  --color-warning: oklch(75% 0.183 55.934);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.65rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+@plugin "daisyui/theme" {
+  name: "ganbaru-rose";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: #f2ddc9;
+  --color-base-200: #a59dcc;
+  --color-base-300: #f2cde4;
+  --color-base-content: #4a4c69;
+  --color-primary: #a59dcc;
+  --color-primary-content: #4a4c69;
+  --color-secondary: #7e76a4;
+  --color-secondary-content: #f2ddc9;
+  --color-accent: #cc4762;
+  --color-accent-content: #e9f0e1;
+  --color-neutral: #f2cde4;
+  --color-neutral-content: #4a4c69;
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(29% 0.066 243.157);
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(26% 0.051 172.552);
+  --color-warning: oklch(75% 0.183 55.934);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.65rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+dialog.modal.modal-dark-backdrop::backdrop {
+  display: contents;
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+* {
+  scroll-behavior: smooth;
+}
