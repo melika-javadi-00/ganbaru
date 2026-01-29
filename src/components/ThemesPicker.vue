@@ -36,7 +36,9 @@ defineEmits(["changeTheme"]);
         </div>
 
         <!-- image Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 w-100">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full"
+        >
           <div
             v-for="image in category.images"
             :key="image.id"

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { useRouter } from "vue-router";
-import ThemesPicker from "../components/themes-picker.vue";
+import ThemesPicker from "../components/ThemesPicker.vue";
 import { themes } from "../utils";
 
 const router = useRouter();
@@ -74,10 +74,12 @@ function goToPomodoro() {
 
 <template>
   <div class="min-h-screen flex flex-col lg:flex-row" id="config">
-    <div class="w-full lg:w-1/3 relative min-h-[50vh]">
+    <div
+      class="w-full aspect-256/389 max-w-2/5 relative min-h-[50vh] hidden lg:block"
+    >
       <img
         src="/images/clock.png"
-        alt="A focused goalkeeper in profile"
+        alt="a clock"
         class="absolute inset-0 w-full h-full object-cover"
       />
     </div>
@@ -85,7 +87,7 @@ function goToPomodoro() {
     <div class="hero min-h-screen bg-[#BB6567]">
       <form @submit.prevent>
         <fieldset
-          class="fieldset border-[#893F45] rounded-box w-lg border p-4 bg-[#893F45]"
+          class="fieldset border-[#893F45] rounded-box w-full lg:w-lg border p-4 bg-[#893F45]"
         >
           <label
             class="label text-xl text-[#DCC1BC] mt-5"
@@ -200,7 +202,7 @@ function goToPomodoro() {
 
           <!-- themes modal -->
           <dialog class="modal" ref="themesModal">
-            <div class="modal-box w-180 max-w-lg bg-neutral text-base-content">
+            <div class="modal-box w-full max-w-lg bg-neutral text-base-content">
               <form method="dialog">
                 <button
                   class="btn bg-transparent border-transparent text-base-content btn-sm btn-circle btn-ghost absolute right-2 top-2 hover:scale-120 transition-transform duration-300"

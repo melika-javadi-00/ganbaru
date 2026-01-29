@@ -2,7 +2,7 @@
 import { ref, watch, computed, onUnmounted, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { confetti } from "@tsparticles/confetti";
-import ThemesPicker from "../components/themes-picker.vue";
+import ThemesPicker from "../components/ThemesPicker.vue";
 import { themes } from "../utils";
 import { useRouter } from "vue-router";
 
